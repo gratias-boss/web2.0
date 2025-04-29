@@ -1,0 +1,37 @@
+/* Style général */
+body {
+    background-color: #2f2f2f;
+    font-family: Arial, sans-serif;
+    color: #2f2f2f;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Appliquer un fond aux frames */
+frame {
+    background-color: #404040;
+    border: none;
+}
+
+/* Style spécifique pour la première frame (header) */
+frame[name="f0"] {
+    background: #3a3a3a;
+}
+
+/* Style spécifique pour les frames secondaires (sidebar/menu) */
+frame[name="f1"],
+frame[name="f2"],
+frame[name="f3"],
+frame[name="f4"],
+frame[name="f5"],
+frame[name="f6"],
+frame[name="f8"] {
+    background: #404040;
+}
+
+
+
+
+
+

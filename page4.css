@@ -1,0 +1,142 @@
+/* --------- BASE --------- */
+body {
+    background-color: #2f2f2f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+
+    animation: fadeIn 1s ease-out;
+}
+
+/* --------- TITRES --------- */
+h1, h2 {
+    text-align: center;
+    color: #ffd700;
+    margin-top: 40px;
+    text-shadow: 2px 2px 5px #000;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+h1 { animation-delay: 0.2s; }
+h2 { animation-delay: 0.3s; }
+
+/* --------- PARAGRAPHES --------- */
+p {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 15px 20px;
+    background-color: #3a3a3a;
+    border-left: 5px solid #ffd700;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    font-size: 1.1rem;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+    animation-delay: 0.4s;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+p:hover {
+    transform: scale(1.01);
+    background-color: #464646;
+}
+
+/* --------- LISTES --------- */
+ul, ol, dl {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #3a3a3a;
+    border-left: 6px solid #ffd700;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    font-size: 1.1rem;
+    list-style-position: inside;
+    opacity: 0;
+    animation: fadeIn 0.9s ease-out forwards;
+    animation-delay: 0.5s;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+ul:hover, ol:hover, dl:hover {
+    transform: scale(1.01);
+    background-color: #464646;
+}
+
+/* --------- LISTES À PUCES --------- */
+ul.retrait {
+    padding-left: 40px;
+}
+
+ul.pas_de_retrait {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+ul.cercle {
+    list-style-type: circle;
+}
+
+ul.carre {
+    list-style-type: square;
+}
+
+ul.rien {
+    list-style-type: none;
+}
+
+/* --------- LISTES ORDONNÉES --------- */
+ol {
+    list-style-type: decimal;
+}
+
+ol.commence_a_zero {
+    list-style-type: decimal-leading-zero;
+}
+
+ol.lettres_minuscules {
+    list-style-type: lower-alpha;
+}
+
+ol.chiffres_romains {
+    list-style-type: upper-roman;
+}
+
+ol.lettres_grecques {
+    list-style-type: lower-greek;
+}
+
+/* --------- LISTE DE DÉFINITION --------- */
+dt {
+    font-weight: bold;
+    color: #ffd700;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 20px;
+    color: #ffffff;
+    font-style: italic;
+}
+
+/* --------- TEXTE DANS LES LISTES --------- */
+li {
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+/* --------- ANIMATION --------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

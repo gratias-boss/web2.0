@@ -1,0 +1,70 @@
+body {
+    background-color: #2f2f2f;
+    color: #d51313;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px #000;
+    margin-bottom: 40px;
+  }
+  
+  .poeme {
+    background-color: #3a3a3a;
+    border-left: 6px solid #ffd700;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .poeme:hover {
+    transform: scale(1.02);
+    background-color: #464646;
+  }
+  
+  .poeme h2 {
+    color: #e5c100;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 4px #000;
+  }
+  
+  .poeme p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+  }
+  
+  /* === Animation fade-in === */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Appliquer l'animation */
+  .poeme {
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0; /* Pour que le fade-in fonctionne */
+  }
+  
+  /* Délais pour chaque poème */
+  .poeme:nth-child(2) { animation-delay: 0.2s; }
+  .poeme:nth-child(3) { animation-delay: 0.4s; }
+  .poeme:nth-child(4) { animation-delay: 0.6s; }
+  

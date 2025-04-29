@@ -1,0 +1,20 @@
+.frame-content .button {
+    display: inline-block;
+    background: linear-gradient(45deg, #FFD700, #FFC300); /* doré brillant */
+    color: #000;
+    padding: 9px 75px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* ombre portée */
+    border: 2px solid #e6be00;
+    transition: transform 0.2s ease, background 0.3s ease;
+    text-align: center;
+}
+
+.frame-content .button:hover {
+    background: linear-gradient(45deg, #FFC300, #FFD700);
+    transform: scale(1.05);
+    cursor: pointer;
+}

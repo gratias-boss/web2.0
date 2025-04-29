@@ -1,0 +1,145 @@
+/* --------- BASE --------- */
+body {
+    background-color: #2f2f2f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+/* --------- EN-TÊTE --------- */
+.header-table {
+    width: 100%;
+    background-color: #3a3a3a;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 0 0 20px 20px;
+    padding: 15px 0;
+    text-align: center;
+    animation: slide-in-top 0.8s ease-out;
+}
+
+.header-table td {
+    width: 33%;
+    vertical-align: middle;
+}
+
+.header-table img {
+    width: 90px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header-table img:hover {
+    transform: scale(1.1);
+}
+
+.header-table h2 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #ffd700;
+    text-shadow: 1px 1px 6px #000;
+}
+
+.header-table a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --------- MAIN & FIELDSETS --------- */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 30px 20px;
+}
+
+fieldset {
+    border: 2px solid #ffd700;
+    border-radius: 15px;
+    background-color: #3a3a3a;
+    padding: 25px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+legend {
+    color: #ffd700;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0 10px;
+    text-shadow: 1px 1px 4px #000;
+}
+
+/* --------- CONTENU PARAGRAPHES --------- */
+p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+p i {
+    color: #ffd700;
+    min-width: 25px;
+}
+
+/* --------- IMAGES --------- */
+fieldset img {
+    display: block;
+    margin: 20px auto 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+}
+
+fieldset img:hover {
+    transform: scale(1.05);
+}
+
+/* --------- EFFETS & ANIMATIONS --------- */
+.animate-on-load {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fade-in-up 0.6s forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1s; }
+
+@keyframes fade-in-up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-in-top {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --------- LIENS --------- */
+a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffffff;
+}

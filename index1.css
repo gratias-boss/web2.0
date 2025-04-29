@@ -1,0 +1,324 @@
+/* === Reset général === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #2f2f2f;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    scroll-behavior: smooth;
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* === HEADER AVEC IFRAME === */
+.header {
+    height: 30vh;
+    width: 100%;
+}
+
+.iframe-header {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* === MAIN CONTENT AVEC IFRAME === */
+.main-content {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.iframe-sidebar {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* === CONTENU DES FRAMES === */
+.frame-content {
+    padding: 20px;
+    background-color: #404040;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.frame-content h1 {
+    font-size: 2rem;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+.frame-content p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* === BOUTONS EN OR AMÉLIORÉS === */
+.frame-content .button,
+button,
+input[type="submit"],
+input[type="reset"] {
+    display: inline-block;
+    background: linear-gradient(45deg, #ffd700, #e5c100);
+    color: #000000;
+    padding: 12px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.frame-content .button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: linear-gradient(45deg, #e5c100, #ffd700);
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(255, 215, 0, 0.7);
+}
+
+/* === FORMULAIRES === */
+form {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #3a3a3a;
+    border: 2px solid #ffd700;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+fieldset {
+    border: 3px solid #ffd700;
+    border-radius: 20px;
+    padding: 30px;
+    background: #404040;
+    margin-bottom: 30px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: 0 10px;
+    color: #ffd700;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #999;
+    border-radius: 8px;
+    background-color: #eeeeee;
+    color: #000;
+    box-sizing: border-box;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #ffd700;
+    background-color: #fff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* === STRUCTURE FORMULAIRE (2 COLONNES) === */
+.etat-civil {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.colonne {
+    display: flex;
+    flex-direction: column;
+}
+
+/* === TITRES === */
+h1, h2, h3, h4 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 8px #000;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+h3, h4 {
+    font-size: 1.6rem;
+    margin-top: 30px;
+}
+
+/* === PARAGRAPHES === */
+p {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 15px 20px;
+    background-color: #3a3a3a;
+    border-left: 5px solid #ffd700;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    font-size: 1.1rem;
+}
+
+/* === LISTES === */
+ul, ol, dl {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #3a3a3a;
+    border-left: 6px solid #ffd700;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    font-size: 1.1rem;
+    list-style-position: inside;
+}
+
+li {
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+ul.retrait { padding-left: 40px; }
+ul.pas_de_retrait { padding-left: 0; list-style-position: inside; }
+ul.cercle { list-style-type: circle; }
+ul.carre { list-style-type: square; }
+ul.rien { list-style-type: none; }
+
+ol { list-style-type: decimal; }
+ol.commence_a_zero { list-style-type: decimal-leading-zero; }
+ol.lettres_minuscules { list-style-type: lower-alpha; }
+ol.chiffres_romains { list-style-type: upper-roman; }
+ol.lettres_grecques { list-style-type: lower-greek; }
+
+dt {
+    font-weight: bold;
+    color: #ffd700;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 20px;
+    color: #ffffff;
+    font-style: italic;
+}
+
+/* === LIENS === */
+a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+a:hover {
+    color: #ffffff;
+}
+
+/* === CITATIONS === */
+q {
+    color: #ffd700;
+    font-style: italic;
+}
+
+blockquote {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #404040;
+    border-left: 6px solid #ffd700;
+    border-radius: 10px;
+    font-style: italic;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+blockquote p {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    text-align: justify;
+}
+
+/* === ANIMATIONS HOVER === */
+p, blockquote, ul, ol, dl {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+p:hover, blockquote:hover, ul:hover, ol:hover, dl:hover {
+    transform: scale(1.01);
+    background-color: #464646;
+}
+
+/* === ANIMATION D'APPARITION === */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .etat-civil {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .main-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-table img {
+        width: 60px;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
