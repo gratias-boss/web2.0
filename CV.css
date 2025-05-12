@@ -6,23 +6,6 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    animation: fadeIn 1s ease-in-out;
-}
-
-/* Animation d'apparition de la page */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
 /* Section de l'en-tête avec photo et informations de contact */
@@ -34,21 +17,9 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-    animation: slideIn 1s ease-out;
 }
 
-/* Animation de l'en-tête */
-@keyframes slideIn {
-    0% {
-        transform: translateY(-50px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
+/* Section de la photo */
 .photo {
     flex: 0 0 100px;
     margin-right: 20px;
@@ -61,6 +32,7 @@ body {
     border: 4px solid #ffd700;
 }
 
+/* Informations dans l'en-tête */
 .header-info {
     flex: 1;
 }
@@ -69,20 +41,17 @@ body {
     font-size: 2.5rem;
     color: #ffd700;
     margin-bottom: 10px;
-    animation: fadeInUp 1s ease-out;
 }
 
 .header-info .sub-title {
     font-size: 1.5rem;
     color: #e5c100;
     margin-bottom: 10px;
-    animation: fadeInUp 1s ease-out 0.5s;
 }
 
 .header-info p {
     font-size: 1rem;
     margin: 5px 0;
-    animation: fadeInUp 1s ease-out 1s;
 }
 
 .header-info a {
@@ -94,18 +63,6 @@ body {
     color: #ffffff;
 }
 
-/* Animation de texte pour faire apparaître avec un délai */
-@keyframes fadeInUp {
-    0% {
-        transform: translateY(30px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 /* Section principale des informations */
 .section {
     background-color: #3a3a3a;
@@ -113,7 +70,6 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    animation: fadeInUp 1s ease-out 1.5s;
 }
 
 .section h2 {
@@ -138,7 +94,6 @@ body {
     list-style-type: none;
     padding: 0;
     text-align: center;
-    animation: fadeInUp 1s ease-out 2s;
 }
 
 .social-links li {
@@ -160,14 +115,92 @@ body {
     background-color: #00b0e5;
 }
 
-/* Animation des liens sociaux */
-@keyframes fadeInUp {
-    0% {
-        transform: translateY(30px);
-        opacity: 0;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .social-links li {
+        display: inline-block;
+        margin: 10px 5px; /* Ajouter de l'espace horizontal */
     }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
+}
+
+@media (max-width: 480px) {
+    .social-links a {
+        font-size: 0.9rem;
+        padding: 8px 18px;
+    }
+
+    .social-links li {
+        display: block;
+        margin: 8px 0; /* Ajouter de l'espace vertical sur les petits écrans */
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo {
+        margin-right: 0;
+        margin-bottom: 15px;
+        flex: 0 0 120px;
+    }
+
+    .header-info h1 {
+        font-size: 2rem;
+    }
+
+    .header-info .sub-title {
+        font-size: 1.2rem;
+    }
+
+    .header-info p {
+        font-size: 0.9rem;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+    }
+
+    .section li {
+        font-size: 1rem;
+    }
+
+    .social-links li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-info .sub-title {
+        font-size: 1rem;
+    }
+
+    .section h2 {
+        font-size: 1.6rem;
+    }
+
+    .section li {
+        font-size: 0.9rem;
+    }
+
+    .social-links a {
+        font-size: 0.9rem;
+        padding: 8px 18px;
+    }
+
+    .social-links li {
+        margin: 8px 0;
     }
 }

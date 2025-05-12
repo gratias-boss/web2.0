@@ -136,7 +136,7 @@ p:hover, blockquote:hover {
 }
 
 .button:hover {
-    background-color: #e5c100;
+    background-color: #e5c100; 
     transform: translateY(-2px);
 }
 

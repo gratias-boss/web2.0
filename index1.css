@@ -322,3 +322,116 @@ p:hover, blockquote:hover, ul:hover, ol:hover, dl:hover {
         padding: 15px;
     }
 }
+
+/* === RESPONSIVE COMPLET === */
+@media (max-width: 1024px) {
+    .etat-civil {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .main-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .frame-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .frame-content p {
+        font-size: 1rem;
+    }
+
+    .frame-content .button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    fieldset {
+        padding: 20px;
+    }
+
+    legend {
+        font-size: 1.4rem;
+    }
+
+    input, textarea, select {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .frame-content {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .frame-content h1 {
+        font-size: 1.4rem;
+    }
+
+    .frame-content p {
+        font-size: 0.95rem;
+    }
+
+    .frame-content .button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3, h4 {
+        font-size: 1.2rem;
+    }
+
+    p, ul, ol, dl, blockquote {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    input, textarea, select {
+        font-size: 0.95rem;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    legend {
+        font-size: 1.2rem;
+    }
+
+    .header-table img {
+        width: 50px;
+    }
+
+    .etat-civil {
+        gap: 20px;
+    }
+}

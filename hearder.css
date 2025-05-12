@@ -31,7 +31,7 @@
   .logo-left img,
   .logo-right img {
     width: auto;
-    max-height: 50vh;      /* ne dépassent pas la hauteur du header */
+    max-height: 50vh;      /* ne pas la hauteur du header */
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
   }
